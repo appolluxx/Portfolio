@@ -347,11 +347,9 @@ body {
 
 @media (max-width: 768px) {
     .terminal-window {
-        width: 100vw;
-        height: 100vh;
-        max-height: 100dvh;
-        border-radius: 0;
-        border: none;
+        width: 95vw;
+        height: 95vh;
+        border-radius: 12px;
     }
     .content-grid {
         grid-template-columns: 1fr;
