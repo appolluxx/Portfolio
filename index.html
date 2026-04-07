@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWJ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://lh3.googleusercontent.com/a/ACg8ocKl1NFoOAC-mPPR_viGqbD9DfzkYhy-85ZcbSJjZn6tY_j2CYY=s317-c-no">
+</head>
+
+<body>
+    <div class="desktop-bg"></div>
+
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="window-buttons">
+                <span class="btn close"></span>
+                <span class="btn minimize"></span>
+                <span class="btn maximize"></span>
+            </div>
+            <div class="window-title">chaiyachet@wiranton ~ /portfolio</div>
+        </div>
+
+        <div class="terminal-body">
+            <pre class="banner-art">
+  ██████╗██╗  ██╗ █████╗ ██╗██╗   ██╗ █████╗  ██████╗██╗  ██╗███████╗████████╗
+ ██╔════╝██║  ██║██╔══██╗██║╚██╗ ██╔╝██╔══██╗██╔════╝██║  ██║██╔════╝╚══██╔══╝
+ ██║     ███████║███████║██║ ╚████╔╝ ███████║██║     ███████║█████╗     ██║   
+ ██║     ██╔══██║██╔══██║██║  ╚██╔╝  ██╔══██║██║     ██╔══██║██╔══╝     ██║   
+ ╚██████╗██║  ██║██║  ██║██║   ██║   ██║  ██║╚██████╗██║  ██║███████╗   ██║   
+  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝   
+            </pre>
+            <div class="content-grid">
+                <!-- Left Column: ASCII Art and Basic Info -->
+                <div class="left-col dashed-box">
+                    <pre class="ascii-art">
+                 ----------------                 
+             ------------------------             
+          ------------------------------          
+        -----------------------------------       
+      --------------------------------------      
+    ------------------------------------------    
+   --------------------------------------------   
+  ----------------------------------------------  
+ ------------------------------------------------ 
+------------------------------*%%+. =##=----------
+-------#*::+#+--------------%%%=   -%%%%%+--------
+----*%%%%#   =%#-----------#%%*     %%%%%%--------
+----#%%%%.    %- .   .+%%%##%%#      -*#+.--------
+----.        *#*-#%%%%%%%%%%%%%%-        ---------
+-------:.:=#%%%%%#%%%%%%%%%%%%%%%%%%%%%%*---------
+---------#%%%%%%%###%%%%%%%%%%%%%%%%%%%%%%#-------
+---------%%%%%%%%%%####%%%%%%%%%#%%%%%%%%##-------
+----------+#%%%%%%%%%%########%%%%%%%%###+--------
+ ---------------+#%%%%%%%%%%%%%%%###*------------ 
+  ------------------=++*######*+=---------------  
+   --------------------------------------------   
+    ------------------------------------------    
+      ---------------------------------------     
+       ------------------------------------       
+          ------------------------------          
+             -------------------------            
+                 ----------------                     
+                    </pre>
+                    <div class="user-info">
+                        <p class="name-title">Chaiyachet Wiranton</p>
+                        <p class="location">Bangkok, Thailand</p>
+                        <p class="email">jonh.cwv@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Skills & Navigation -->
+                <div class="right-col">
+                    <div class="skills-section dashed-box">
+                        <div class="skill-row">
+                            <span class="skill-label">Status</span>
+                            <span class="skill-val">Open to opportunities</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Focus</span>
+                            <span class="skill-val">Software Engineering, Web</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Location</span>
+                            <span class="skill-val">Bangkok, TH (Remote/Local)</span>
+                        </div>
+                    </div>
+
+                    <div class="nav-section dashed-box">
+                        <h3 class="nav-title">Navigation</h3>
+                        <ul class="nav-list" id="nav-list">
+                            <li><a href="#" data-cmd="/about">/about</a></li>
+                            <li><a href="#" data-cmd="/work">/work</a></li>
+                            <li><a href="#" data-cmd="/skills">/skills</a></li>
+                            <li><a href="#" data-cmd="/contact">/contact</a></li>
+                        </ul>
+                        <p class="help-text">... /help for all commands</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Output area for commands -->
+            <div id="output-area"></div>
+
+            <div class="cookie-notice">
+                <span class="sys-tag">[system]</span> This site uses standard web operations. <span class="dim">Accept •
+                    Decline • </span> <strong>/privacy</strong> for details
+            </div>
+        </div>
+
+        <div class="terminal-footer">
+            <span class="prompt-arrow">&gt;</span>
+            <input type="text" id="cmd-input" placeholder='Type a command... try "/help"' autocomplete="off"
+                spellcheck="false" autofocus>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
