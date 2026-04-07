@@ -346,10 +346,45 @@ body {
 }
 
 @media (max-width: 768px) {
+    .terminal-window {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100dvh;
+        border-radius: 0;
+        border: none;
+    }
     .content-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
     .terminal-body {
         padding: 16px;
+    }
+    .dashed-box {
+        padding: 16px;
+    }
+    .banner-art {
+        font-size: 0.22rem;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 8px; /* For scrollbar breathing room */
+    }
+    .ascii-art {
+        font-size: 0.3rem;
+        overflow-x: auto;
+        max-width: 100%;
+        padding-bottom: 8px;
+    }
+    .terminal-footer {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-art {
+        font-size: 0.15rem;
+    }
+    .ascii-art {
+        font-size: 0.22rem;
     }
 }
